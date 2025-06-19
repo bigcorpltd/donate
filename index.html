@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Поддержать творческий проект</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+    button {
+      background: #FF5722; color: white; border: none;
+      padding: 15px 30px; font-size: 18px; border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover { background: #E64A19; }
+  </style>
+</head>
+<body>
+  <h1>Поддержите проект</h1>
+  <p>Ваш донат поможет создавать новые талисманы и расклады Toro</p>
+  <button id="donateBtn">Поддержать</button>
+
+  <script>
+    document.getElementById('donateBtn').addEventListener('click', () => {
+      // Редирект на тестовую страницу Cryptomus
+      window.location.href = 'https://pay.cryptomus.com/your-invoice-id';
+    });
+  </script>
+</body>
+</html>
